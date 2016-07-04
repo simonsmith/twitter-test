@@ -26,7 +26,7 @@ const getApiParams = flow(
   pick('screen_name'),
   assign({
     count: 10,
-    exclude_replies: true,
+    include_rts: true
   })
 );
 
