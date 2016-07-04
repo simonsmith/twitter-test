@@ -1,0 +1,34 @@
+/** @define Tweet */
+
+@import "./user.css";
+
+.Tweet {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+
+  @media (--md-viewport) {
+    padding: 18px;
+  }
+}
+
+.Tweet.is-retweet {
+  border-left-color: #19cf86;
+  border-left-width: 5px;
+}
+
+.Tweet-user {
+  margin-bottom: 10px;
+}
+
+.Tweet-timestamp {
+  color: #888;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.Tweet-text {
+  font-size: 18px;
+  line-height: 1.4;
+}

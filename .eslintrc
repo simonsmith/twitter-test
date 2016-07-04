@@ -1,0 +1,22 @@
+{
+    "extends": "eslint:recommended",
+    "root": true,
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "react"
+    ],
+    "env": {
+      "es6": true,
+      "browser": true,
+      "mocha": true,
+      "node": true
+    },
+    "rules": {
+       "react/jsx-uses-vars": 2
+    }
+}
+

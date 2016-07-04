@@ -1,0 +1,35 @@
+/** @define TweetList */
+
+@import "./tweet.css";
+
+:root {
+  --TweetList-spacing: 10px;
+  --TweetList-itemWidth: calc(50% - var(--TweetList-spacing));
+}
+
+.TweetList-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.TweetList-item {
+  margin-bottom: var(--TweetList-spacing);
+}
+
+@media (--md-viewport) {
+
+  .TweetList-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -var(--TweetList-spacing);
+  }
+
+  .TweetList-item {
+    display: flex;
+    flex: 1 0 auto;
+    margin-left: var(--TweetList-spacing);
+    max-width: var(--TweetList-itemWidth);
+    width: var(--TweetList-itemWidth);
+  }
+}

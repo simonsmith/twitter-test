@@ -1,0 +1,7 @@
+/** @define Container */
+
+.Container {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 25px 10px 0 10px;
+}

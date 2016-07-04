@@ -1,0 +1,21 @@
+/** @define User */
+
+:root {
+  --User-color: #444;
+}
+
+.User {
+  align-items: center;
+  display: flex;
+}
+
+.User-img {
+  border: 1px solid var(--User-color);
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.User-link {
+  color: var(--User-color);
+  text-decoration: none;
+}

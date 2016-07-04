@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{username}}'s latest tweets</title>
+    <link rel="stylesheet" href="static/site.css">
+  </head>
+  <body>
+    <div class="Container">
+      <div id="tweets">{{componentHtml | safe}}</div>
+    </div>
+
+    <script>
+      window.config = {
+        componentData: {{componentData | dump | safe}},
+        username: "{{username}}"
+      };
+    </script>
+    <script src="static/site.js"></script>
+  </body>
+</html>
